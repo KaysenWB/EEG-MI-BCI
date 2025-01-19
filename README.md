@@ -6,6 +6,7 @@ This motor imagery brain-computer interface and EEG decoding process uses only c
 This work evaluates the decoding performance using accuracy, Kappa, and F1-score. In the test, the trained model achieves an average of 0.6906, 0.5787, and 0.6785 for the three indicators. We provide the test outputs and the trained model in the ‘results’ folder.
 
 # result
+<img src="https://github.com/KaysenWB/EEG-MI-BCI/blob/main/EEG-BCI/results/figure/metrics.png?raw=true" alt="示例图片" width="300" />
 ![Figure01](https://github.com/KaysenWB/EEG-MI-BCI/blob/main/EEG-BCI/results/figure/metrics.png?raw=true)
 ![Figure02](https://github.com/KaysenWB/EEG-MI-BCI/blob/main/EEG-BCI/results/figure/trials.png?raw=true)
 ![Figure03](https://github.com/KaysenWB/EEG-MI-BCI/blob/main/EEG-BCI/results/figure/trials_correct.png?raw=true)
