@@ -22,7 +22,7 @@ plt.scatter(x, Real+0.03, c='black', s=3, alpha=0.8, label = 'Real', marker='^')
 plt.scatter(x, Pred-0.03, c='blue',s=3, alpha= 0.8 ,label = 'Pred', marker='v')
 plt.yticks(ticks=np.arange(len(y_labels)), labels=y_labels)
 plt.legend(ncol=2)
-plt.savefig(fname= './results/trails.png', dpi=500, format='png',bbox_inches='tight')
+plt.savefig(fname= './results/trials.png', dpi=500, format='png',bbox_inches='tight')
 plt.show()
 print(';')
 
@@ -46,7 +46,7 @@ plt.vlines(x=correct[:,0], ymin=correct[:,1]-0.3, ymax=correct[:,1]+0.3,color='g
 plt.vlines(x=error[:,0], ymin=error[:,1]-0.15, ymax=error[:,1]+0.15,color='red', alpha=0.6, linewidth=1, label = 'error')
 plt.yticks(ticks=np.arange(len(y_labels)), labels=y_labels)
 plt.legend(ncol=4)
-plt.savefig(fname= './results/trails_correct.png', dpi=500, format='png',bbox_inches='tight')
+plt.savefig(fname= './results/trials_correct.png', dpi=500, format='png',bbox_inches='tight')
 plt.show()
 print(';')
 
