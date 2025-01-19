@@ -6,15 +6,16 @@ This motor imagery brain-computer interface and EEG decoding process uses only c
 This work evaluates the decoding performance using accuracy, Kappa, and F1-score. In the test, the trained model achieves an average of 0.6906, 0.5787, and 0.6785 for the three indicators. We provide the test outputs and the trained model in the ‘results’ folder.
 
 # result
-
+In the results folder, metrics.csv is a record of the evaluation metrics in 200 training epochs. Its 2-4 columns are accuracy, kappa, and F1-score, and metrics.png is its visualization.
 <p align="center">
 <img src="./EEG-BCI/results/figure/metrics.png" height = "360" alt="" align=center />
 </p>
 
-<div style="text-align: center;">
-   <img src="./EEG-BCI/results/figure/metrics.png" alt="示例图片" width="300" align=center />
-</div>
+In addition, best.tar is our trained model. Real.npy is the real classification of 437 trials in the test set, and Pred.npy is the predicted classification of 437 trials using the best.tar. Among them, 0, 1, 2, and 3 represent the four classes of left, right, foot, and tongue, respectively. In the figure below, the black upward triangle represents the real trial that occurred, and the blue downward triangle represents the predicted trial. We marked the successful prediction trial with a long green line and the failed prediction trial with a short red line. On the test set, the prediction accuracy of our model averaged 69.0%
 
 ![Figure02](https://github.com/KaysenWB/EEG-MI-BCI/blob/main/EEG-BCI/results/figure/trials.png?raw=true)
 ![Figure03](https://github.com/KaysenWB/EEG-MI-BCI/blob/main/EEG-BCI/results/figure/trials_correct.png?raw=true)
+
+# Acknowledgements
+The preprocessing of BCICIV2a data in this work is derived from this work: https://github.com/bregydoc/bcidatasetIV2a.git, which is gratefully acknowledged.
 
